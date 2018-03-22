@@ -21,7 +21,7 @@ class App extends Component {
   }
 
   componentDidMount() {
-    axios.get('http://localhost:8000/key')
+    axios.get('/key')
     .then((res)=>{
       console.log(res)
       this.setState({
@@ -45,14 +45,14 @@ class App extends Component {
     selectObjects[currentPart] = true;
     this.human.send("scene.selectObjects", selectObjects);
 
-    const localhost = "http://localhost:8000/currentPart/" + name
+    const localhost = "/currentPart/" + name
     axios.get(localhost)
     
     .then (res => {
       console.log(res)
       this.setState({
         currentWorkout: res.data,
-        display: {displaySuggestion: " Suggested workouts for selected body part(s): \n", displayConjunction: " Body parts that are being worked in conjunction: "}
+        display: {displaySuggestion: " Suggested workouts for selected body part(s): ", displayConjunction: " Body parts that are being worked in conjunction: "}
       })
     })
 
