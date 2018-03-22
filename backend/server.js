@@ -15,8 +15,8 @@ app.use((req, res, next) => {
 
 app.use(express.static(__dirname + './../build'))
 
-app.listen(8000, () => {
-	console.log('Server Started on http://localhost:8000');
+app.listen(process.env.PORT || 8000, () => {
+	console.log('Server Started on ' + process.env.PORT );
 	console.log('Press CTRL + C to stop server');
 });
 app.use(bodyParser.json())
