@@ -13,6 +13,8 @@ app.use((req, res, next) => {
     next();
   });
 
+app.use(express.static(__dirname + './../build'))
+
 app.listen(8000, () => {
 	console.log('Server Started on http://localhost:8000');
 	console.log('Press CTRL + C to stop server');
@@ -33,4 +35,10 @@ app.get('/currentPart/:part', (req, res) => {
 app.get('/key', (req, res) => {
 	res.send(process.env.Dev_Key)
 	console.log(process.env.Dev_Key)
+	console.log("key")
 })
+
+
+app.get('*', (req, res) => {
+	res.sendFile('index.html',{root: __dirname + './../build'})
+    });
