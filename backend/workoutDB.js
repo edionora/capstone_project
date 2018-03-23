@@ -1,5 +1,5 @@
 workouts = [/***** chest *****/{
-              group: "chest",
+              group: "Chest",
               suggestions: [{
                 name: "Bench press",
                 image:"http://weighttraining.guide/wp-content/uploads/2016/05/Barbell-Bench-Press.png",
@@ -9,7 +9,7 @@ workouts = [/***** chest *****/{
                 image:"http://weighttraining.guide/wp-content/uploads/2016/11/dumbbell-chest-fly-990x500.png",
                 conjunction: [" Anterior Deltoid", " Biceps brachii (short head)"]}],
             },/***** trap *****/{
-              group: "trap",
+              group: "Trapezius",
               suggestions: [{
                 name:"Dumbbell shrug",
                 image:"http://weighttraining.guide/wp-content/uploads/2016/10/dumbbell-shrug-990x894.png",
@@ -27,7 +27,7 @@ workouts = [/***** chest *****/{
                 image:"",
                 conjunction: []}],
             },/***** lats *****/{
-              group: "lats",
+              group: "Latissimus Dorsi",
               suggestions: [{
                 name: "Deadlifts (Lower region)",
                 image:"",
@@ -38,7 +38,7 @@ workouts = [/***** chest *****/{
                 conjunction: []}],
               
             },/***** quads *****/{
-              group: "quads",
+              group: "Quadriceps",
               suggestions: [{
                 name: "(Barbell or dumbbell) Squats",
                 image:"",
@@ -50,7 +50,7 @@ workouts = [/***** chest *****/{
                 }],
               
             },/***** glutes *****/{
-              group: "glutes",
+              group: "Gluteal Muscles",
               suggestions: [{
                 name: "Straight-leg cable pull-through",
                 image:"http://weighttraining.guide/wp-content/uploads/2017/08/Straight-leg-cable-pull-through-990x620.png",
@@ -68,13 +68,13 @@ workouts = [/***** chest *****/{
                 image:"",
                 conjunction: [" Gluteal Muscles"]}],
             },{
-              group: "calves",
+              group: "Calves",
               suggestions: [{
                 name: "Machine seated one-leg calf raise",
                 image:"http://weighttraining.guide/wp-content/uploads/2017/07/machine-seated-one-leg-calf-raise-990x628.png",
                 conjunction: []}],
             },/***** arms *****/{
-              group: "arms",
+              group: "Arms",
               suggestions: [{
                 name: "Bicep curls (Biceps brachii)",
                 image:"",
@@ -88,7 +88,7 @@ workouts = [/***** chest *****/{
                 image:"",
                 conjunction: ["   "]}],
             },/***** shoulders *****/{
-              group: "shoulders",
+              group: "Shoulders",
               suggestions: [{
                 name: "Lateral Raises",
                 image:"",
@@ -98,7 +98,7 @@ workouts = [/***** chest *****/{
                 image:"",
                 conjunction: ["   "]}],
             },/***** forearms *****/{
-              group: "forearms",
+              group: "Forearms",
               suggestions: [{
                 name: "Farmer's Walk",
                 image:"",
@@ -112,7 +112,7 @@ workouts = [/***** chest *****/{
                 image:"",
                 conjunction: ["   "]}],
             }, /***** core *****/{
-              group: "core",
+              group: "Abdomen",
               suggestions: [{
                 name: "Dumbbell side bend",
                 image:"http://weighttraining.guide/wp-content/uploads/2017/02/dumbbell-side-bend-990x858.png",

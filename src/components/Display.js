@@ -21,6 +21,14 @@ export default class Display extends Component {
             <div className="enableScroll">
                 <h2 className="primaryHeader"> {primaryHeader}</h2>
                 {suggestions}
+                {suggestions}
+                {suggestions}
+                {suggestions}
+
+                {suggestions}
+                {suggestions}
+                {suggestions}
+                {suggestions}
             </div>
         );
     }

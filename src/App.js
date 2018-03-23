@@ -3,13 +3,9 @@ import './Stylings/styles.css';
 import './Stylings/buttonStyles.css'
 import './Stylings/scrollbar.css'
 import Human from './components/Human'
-import Chestbtn from './components/Chestbtn'
-import Backbtn from './components/Backbtn'
-import UpperLimbsbtn from './components/UpperLimbsbtn'
-import LowerLimbsbtn from './components/LowerLimbsbtn'
-import Corebtn from './components/Corebtn'
 import Display from './components/Display'
 import Help from './components/Help'
+import {BodyController} from './components/bodyController/BodyController'
 import axios from 'axios';
 
 class App extends Component {
@@ -71,21 +67,16 @@ class App extends Component {
         </header>
 
         <div className="container float-left">
-          
           <div className="pane">
-          <Help/>
-          <Chestbtn selectPart={this.selectPart}/>
-          <Corebtn selectPart={this.selectPart}/>
-          <Backbtn selectPart={this.selectPart}/>
-          <UpperLimbsbtn selectPart={this.selectPart}/>
-          <LowerLimbsbtn selectPart={this.selectPart}/>
+          <Help/>        
+          <BodyController selectPart={this.selectPart}/>
           </div>
           <Display
           display={this.state.display}
           currentWorkout={this.state.currentWorkout}
           suggestions={this.state.currentWorkout.suggestions}/>
-          
         </div>
+
         <Human APIkey={this.state.key}/>
       </div>
     );

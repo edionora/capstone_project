@@ -23,6 +23,7 @@ app.use((req, res, next) => {
     next();
   });
 
+
 //Step 2:
 //Comment this line out
 // app.use(express.static(__dirname + './../build'))
@@ -35,7 +36,7 @@ app.use(bodyParser.json())
 let workoutDb = []
 
 app.get('/currentPart/:part', (req, res) => {
-	console.log(req.params.part)
+	console.log("The body part " + req.params.part + " was clicked")
 	for (var i = 0; i < workouts.length; i++){
 		if (workouts[i].group == req.params.part)
 		{
@@ -48,8 +49,6 @@ app.get('/currentPart/:part', (req, res) => {
 
 app.get('/key', (req, res) => {
 	res.send(process.env.Dev_Key)
-	console.log(process.env.Dev_Key)
-	console.log("key")
 })
 
 //Step 3:
