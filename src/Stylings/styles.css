@@ -16,7 +16,8 @@
     background-color: lightgray;
     height: 150px;
     padding: 20px;
-    color:  white;
+    color: darkslategray;
+    text-shadow:1.5px 1px 0 #444;
   }
   
   .headerFont {
@@ -47,8 +48,15 @@ iframe{
 a, button {
     text-decoration: none;
   }
+  .container{
+    max-width: 47%;
+    padding: 0;
+}
+.primaryHeader {
+    color: #333333;
+  } 
 
-  .card {
+.card {
     border: none;
     margin-top: 1em;
     margin-bottom: 1em;
@@ -57,22 +65,19 @@ a, button {
     vertical-align: baseline;
     font-family: Georgia, 'Times New Roman', Times, serif;
     font-size: 1.25em;
-
 }
-
+.media-body{
+  margin-top: .5em;
+}
 img {
     width: 45%;
     height: 45%;
     margin-left: 10em;
     float: right;
+    margin-top: .5em
 }
-.container{
-    max-width: 47%;
-    padding: 0;
-}
-
-
 .enableScroll {
+  padding-top: 1em;
   overflow-y: scroll;
   height: 80vh
 }

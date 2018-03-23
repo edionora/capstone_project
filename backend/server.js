@@ -5,7 +5,17 @@ const bodyParser = require('body-parser');
 const axios = require('axios');
 const request = require('request');
 const workouts = require('./workoutDB')
+const coreWorkouts = require('./coreDB')
 require('dotenv').config();
+
+//Development mode:
+//Step 1:
+//	a)Navigate into pacakge.json folder and add this on line 5:
+//	  "proxy": "http//localhost:8000", 
+
+//	b) replace 		"start": "nodemon backend/server.js"
+//	   with  		"start": "react-scripts start"
+
 
 app.use((req, res, next) => {
     res.header("Access-Control-Allow-Origin", "*");
@@ -13,7 +23,9 @@ app.use((req, res, next) => {
     next();
   });
 
-app.use(express.static(__dirname + './../build'))
+//Step 2:
+//Comment this line out
+// app.use(express.static(__dirname + './../build'))
 
 app.listen(process.env.PORT || 8000, () => {
 	console.log('Server Started on ' + process.env.PORT );
@@ -32,13 +44,21 @@ app.get('/currentPart/:part', (req, res) => {
 	}
 })
 
+
+
 app.get('/key', (req, res) => {
 	res.send(process.env.Dev_Key)
 	console.log(process.env.Dev_Key)
 	console.log("key")
 })
 
+//Step 3:
+//Comment this request out
+// app.get('*', (req, res) => {
+// 	res.sendFile('index.html',{root: __dirname + './../build'})
+// 	});
+	
 
-app.get('*', (req, res) => {
-	res.sendFile('index.html',{root: __dirname + './../build'})
-    });
+//Step 4:
+// Go into App.js and change server requests  (see commented lines above axios.get requests)
+

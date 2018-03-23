@@ -1,18 +1,36 @@
 import React, { Component } from 'react';
-import '../styles.css'
-
-//"human_05_male_muscular_system-muscles_of_left_pectoral_girdle_ID"
 
 export default class Chestbtn extends Component {
 state = {
-    chest: "human_05_male_muscular_system-muscles_of_left_pectoral_girdle_ID"
+    chest: "human_05_male_muscular_system-muscles_of_left_pectoral_girdle_ID",
+    image: `data:image/svg+xml;base64,PHN2ZyBoZWlnaHQ9JzIwMCcgd2lkdGg9JzIwMCcgIGZpbGw9IiMwMDAwMDAiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgeG
+    1sbnM6eGxpbms9Imh0dHA6Ly93d3cudzMub3JnLzE5OTkveGxpbmsiIHZlcnNpb249IjEuMSIgeD0iMHB4IiB5PSIwcHgiIHZpZXdCb3g9IjAgMCAxMDAgMTAwIiBlbmFibGUtYmFja2dyb3V
+    uZD0ibmV3IDAgMCAxMDAgMTAwIiB4bWw6c3BhY2U9InByZXNlcnZlIj48cGF0aCBkPSJNOTMuNTgxLDYzLjgyNnYtNy4xNDlIODAuOTNjLTIuNzM5LTIuODA3LTYuMTg2LTYuMDA4LTcuODM5
+    LTYuMjA4Yy0xLjU0LTAuMDU1LTExLjUzMi0wLjA1Ny0yMS4zOTYtMC4wNDRsLTAuMTQ2LTI0LjYwOCAgbDUuNjQxLTEuMDFjMC44ODksNC42ODgsNC45OTEsOC4yMzgsOS45MzcsOC4yMzhjNS
+    41OTIsMCwxMC4xMjQtNC41MzQsMTAuMTI0LTEwLjEyNWMwLTUuNTkyLTQuNTMyLTEwLjEyNS0xMC4xMjQtMTAuMTI1ICBjLTUuNTk1LDAtMTAuMTI1LDQuNTMzLTEwLjEyNSwxMC4xMjVjMCww
+    LjA4OCwwLjAyNSwwLjE2OSwwLjAyNSwwLjI1N2wtNS40ODcsMC45ODJsLTAuMDAyLTAuMTU4YzAsMC0wLjc0Ni0zLjMzMy00LjA4LTIuNjY4ICBjLTMuMzM2LDAuNjgtMy43NTUsMi44NTItMy4
+    3NTUsMi44NTJzLTAuMDI0LDAuNTMtMC4wNjIsMS4zODhsLTQuNjM2LDAuODMxbC0wLjAwNy0xLjI2NWMwLDAtMC43MjgtMy4yMzktMy45NjgtMi41OTIgIGMtMy4yNDYsMC42NjEtMy42NTEsMi4
+    3NzMtMy42NTEsMi43NzNzLTAuMDQ1LDAuOTQxLTAuMTA1LDIuNDY3bC02Ljg5OCwxLjIzNWMtMC42MTgtMy44NDktMy45MjgtNi43OTctNy45NDktNi43OTcgIGMtNC40NjIsMC04LjA3OSwzLjY
+    xNy04LjA3OSw4LjA3OHMzLjYxNiw4LjA3OCw4LjA3OSw4LjA3OGM0LjMzNywwLDcuODQ4LTMuNDI3LDguMDQyLTcuNzE3bDYuNzQyLTEuMjA4ICBjLTAuMTg2LDUuMjE1LTAuNDI5LDE0LjI5OC0w
+    LjE2MiwyMS4wMTJjLTAuMDE2LDAtMC4wNSwwLTAuMDUsMGMtMC4xMjUsMC40LTAuMjM1LDAuNzkxLTAuMzMxLDEuMTc5bC0wLjA3NywwLjI3OCAgYy0wLjQyNSwxLjc5MS0wLjUzMiwzLjM3Ny0wL
+    jQ3OSw0Ljc1MWgtMi40NjhjMC44MzMtMS40MzEsMS4zNDYtMy4wNywxLjM0Ni00Ljg0M2MwLTUuMzMyLTQuMzI3LTkuNjU0LTkuNjYtOS42NTQgIFM5LjY3LDQ2LjUwMiw5LjY3LDUxLjgzNGMwLDE
+    uNzcyLDAuNTExLDMuNDEyLDEuMzQ0LDQuODQzSDcuMDMxdjcuMTQ5djIxLjE2MmgzLjcwMVY2My44MjZoNTIuMTIybDEuNjA0LDEuOTQzbDIuOTM5LDE1Ljg5OCAgYzAsMCwxLjcxMSw0LjY5LDUu
+    NjUyLDMuODI1YzMuOTQxLTAuODU5LDMuNjEtNC40MDIsMy42MS00LjQwMmwtMy4xOTctMTcuMjY1aDAuNjI2bDEuMzUxLDEuNjM4bDMuMjI0LDE3LjQzNCAgYzAsMCwxLjg3NCw1LjEzOCw2LjE5Ny
+    w0LjE5NGM0LjMyMS0wLjk0MywzLjk1Ny00LjgyOCwzLjk1Ny00LjgyOGwtMy40MS0xOC40MzhoNC40Nzl2MjEuMTYyaDMuNzAxVjYzLjgyNkg5My41ODF6IE02Ny4xMjYsMjIuMzc3ICBjMC4yOTks
+    MCwwLjU0LDAuMjQzLDAuNTQsMC41NDJjMCwwLjI5OC0wLjI0MSwwLjU0MS0wLjU0LDAuNTQxcy0wLjU0MS0wLjI0My0wLjU0MS0wLjU0MUM2Ni41ODUsMjIuNjIsNjYuODI3LDIyLjM3Nyw2Ny4xMj
+    YsMjIuMzc3ICB6IE0xNi4wNjgsMzAuOTQ1Yy0wLjI5OSwwLTAuNTQyLTAuMjQyLTAuNTQyLTAuNTQxYzAtMC4yOTgsMC4yNDItMC41NDEsMC41NDItMC41NDFjMC4yOTgsMCwwLjU0MSwwLjI0Miww
+    LjU0MSwwLjU0MSAgQzE2LjYwOCwzMC43MDMsMTYuMzY2LDMwLjk0NSwxNi4wNjgsMzAuOTQ1eiBNNDMuMzc2LDUwLjQzOWMtMS40OTcsMC4wMDMtMi45MTQsMC4wMDctNC4yMzEsMC4wMDlsLTAuMT
+    MxLTIyLjM4OGw0LjU2MS0wLjgxNyAgQzQzLjM3NywzMi4zODIsNDMuMDU0LDQyLjk0OCw0My4zNzYsNTAuNDM5eiI+PC9wYXRoPjwvc3ZnPg==`
 }
 
 
     render() {
         return (
             <div className="btn-group">
-               <button className="btn btn-danger" type="button" onClick={()=> this.props.selectPart(this.state.chest, "chest")}> Chest </button>
+               <button className="btn btn-dark" type="button" onClick={()=> this.props.selectPart(this.state.chest, "chest")}>
+               <img className="button_icon" src={this.state.image} alt=""/>
+               Chest
+               </button>
             </div>
         );
     }

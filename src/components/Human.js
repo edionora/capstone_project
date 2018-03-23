@@ -1,9 +1,6 @@
 import React, { Component } from 'react';
-import '../styles.css'
-
 
 export default class Human extends Component {
-
     render() {
         if (this.props.APIkey.length !== 0) {
             return (
@@ -22,7 +19,7 @@ export default class Human extends Component {
         }
         else {
             return (
-                <p>Loading</p>
+                <h1 className="loadingFont">Loading widget...</h1>
             )
         }
     }
