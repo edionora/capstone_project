@@ -1,37 +1,32 @@
 .App {
-    text-align: center;
-  }
-  
-  .App-logo {
-    animation: beat .25s infinite alternate;
-    font-size: 55px;
-    color: #e00;
-    transform-origin: center;
-  }
-  @keyframes beat{
+  text-align: center;
+} 
+.App-logo {
+  animation: beat .25s infinite alternate;
+  font-size: 55px;
+  color: #e00;
+  transform-origin: center;
+}
+@keyframes beat{
 	to { transform: scale(1.4); }
 }
-  
-  .App-header {
-    background-color: lightgray;
-    height: 150px;
-    padding: 20px;
-    color: darkslategray;
-    text-shadow:1.5px 1px 0 #444;
+.App-header {
+  background-color: lightgray;
+  height: 150px;
+  padding: 20px;
+  color: darkslategray;
+  text-shadow:1.5px 1px 0 #444;
   }
-  
-  .headerFont {
-    font-family: Georgia, 'Times New Roman', Times, serif;
-    font-size: 2.5em;
-    text-transform: uppercase;
-  }
-
-  .subHeader{
-    font-family: Georgia, 'Times New Roman', Times, serif;
-    font-size: 1em;
-    text-transform: uppercase;
-  }
-  
+.headerFont {
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  font-size: 2.5em;
+  text-transform: uppercase;
+}
+.subHeader{
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  font-size: 1em;
+  text-transform: uppercase;
+}
   @keyframes App-logo-spin {
     from { transform: rotate(0deg); }
     to { transform: rotate(360deg); }
@@ -39,44 +34,53 @@
 
 /* My own css*/
 #embedded-human {
-    width: 53%;
-    overflow: auto;
+  width: 53%;
+  overflow: auto;
 }
 iframe{
-    overflow: auto;
+  overflow: auto;
 }
 a, button {
-    text-decoration: none;
-  }
-  .container{
-    max-width: 47%;
-    padding: 0;
+  text-decoration: none;
+}
+.container{
+  max-width: 47%;
+  padding: 0;
 }
 .primaryHeader {
-    color: #333333;
-  } 
-
-.card {
-    border: none;
-    margin-top: 1em;
-    margin-bottom: 1em;
+  color: #ffff;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  font-size: 2em;
+} 
+.card{
+  border: none;
+  margin-top: 1em;
+  margin-bottom: 1em;
+  /* background-color: inherit;
+  color: lightgray */
 }
 .card p{
-    vertical-align: baseline;
-    font-family: Georgia, 'Times New Roman', Times, serif;
-    font-size: 1.25em;
+  vertical-align: baseline;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  font-size: 1.25em;
 }
 .media-body{
   margin-top: .5em;
 }
-img {
-    width: 45%;
-    height: 45%;
-    margin-left: 10em;
-    float: right;
-    margin-top: .5em
+img{
+  width: 45%;
+  height: 45%;
+  margin-left: 10em;
+  float: right;
+  margin-top: .5em;
 }
-.enableScroll {
+/* a{
+  width: fit-content;
+  height: fit-content;
+  display: inline-block;
+  overflow: hidden;
+} */
+.enableScroll{
   padding-top: 1em;
   overflow-y: scroll;
   height: 80vh; 

@@ -12,7 +12,7 @@ export default class Human extends Component {
                         //width="70%"
                         height="800"
                         allowFullScreen="true"
-                        src={`https://human.biodigital.com/widget/?be=2THN&initial=true&ui-help=true&ui-share=false&dk=${this.props.APIkey}`}>
+                        src={`https://human.biodigital.com/widget/?be=2Ti3&background.colors=255,255,255,1,0,0,0,1&initial=true&load-rotate=15&ui-dissect=true&ui-help=true&ui-share=false&ui-tools-display=primary&dk=${this.props.APIkey}`}>
                     </iframe>
                 </div>
             );

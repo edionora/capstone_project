@@ -13,7 +13,7 @@ export default class Display extends Component {
                         <h5> {secondaryHeader} </h5>
                         <h6 className="mt-0 mb-1"> {workouts.conjunction + " \n"} </h6>
                     </div>
-                    <img className="ml-3" src={workouts.image} alt=""/>
+                   <img className="align-self-end mr-3" src={workouts.image} alt=""/> 
                 </div>
             </div>
         ))

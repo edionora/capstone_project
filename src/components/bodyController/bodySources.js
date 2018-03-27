@@ -76,12 +76,13 @@ module.exports  = {
         subCategories: [
         {
             title: "Trapezius",
-            id :"human_05_male_muscular_system-left_trapezius_ID",
-            source: " "
+            id :"human_05_male_muscular_system-right_trapezius_ID"
         },{
             title: "Latissimus Dorsi",
-            id :"human_05_male_muscular_system-left_latissimus_dorsi_ID",
-            source: " "
+            id :"human_05_male_muscular_system-left_latissimus_dorsi_ID"
+        },{
+            title: "Rhomboids",
+            id :"human_05_male_muscular_system-deep_muscles_of_left_shoulder_ID"
         }]
     },
     lower: {
@@ -104,13 +105,16 @@ module.exports  = {
         subCategories: [
         {
             title: "Quadriceps",
-            id :"human_05_male_muscular_system-muscles_of_right_thigh_ID",
+            id :"human_05_male_muscular_system-anterior_compartment_muscles_of_right_thigh_ID",
         },{
             title: "Gluteal Muscles",
             id :"human_05_male_muscular_system-right_gluteal_muscles_ID",
         },{
+            title: "Hamstrings",
+            id :"human_05_male_muscular_system-posterior_compartment_muscles_of_right_thigh_ID",
+        },{
             title: "Calves",
-            id :"human_05_male_muscular_system-muscles_of_right_lower_leg_ID",
+            id :"human_05_male_muscular_system-posterior_compartment_muscles_of_right_lower_leg_ID",
         }]
     }
 }

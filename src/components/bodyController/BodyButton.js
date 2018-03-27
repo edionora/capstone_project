@@ -5,7 +5,7 @@ export const BodyButton = (props) => {
 const currentBodyPart = bodySources[props.selectedPart]
     return (
     <div className="btn-group">
-        <button className="btn btn-dark" type="button" onClick={()=> props.selectPart(currentBodyPart.id, currentBodyPart.title)}>
+        <button className="btn btn-dark pane-btn" type="button" onClick={()=> props.selectPart(currentBodyPart.id, currentBodyPart.title)}>
         <img className="button_icon" src={currentBodyPart.source} alt=""/>
         {currentBodyPart.title}
         </button>
