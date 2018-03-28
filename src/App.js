@@ -36,6 +36,9 @@ export default class App extends Component {
     selectObjects[currentPart] = true;
     this.human.send("scene.selectObjects", selectObjects);
 
+   this.human.on('scene.picked', function (info) {
+      console.log(info.objectId);
+    });
     const localhost = "http://localhost:8000/currentPart/" + name   // -> Development mode
     // const localhost = "/currentPart/" + name   // -> Production mode
     axios.get(localhost)
@@ -46,6 +49,9 @@ export default class App extends Component {
         })
       })
   }
+
+
+
 
   render() {
     return (

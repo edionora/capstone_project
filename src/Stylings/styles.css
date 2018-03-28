@@ -67,19 +67,13 @@ a, button {
 .media-body{
   margin-top: .5em;
 }
-img{
+.list-img{
   width: 45%;
   height: 45%;
   margin-left: 10em;
   float: right;
   margin-top: .5em;
 }
-/* a{
-  width: fit-content;
-  height: fit-content;
-  display: inline-block;
-  overflow: hidden;
-} */
 .enableScroll{
   padding-top: 1em;
   overflow-y: scroll;

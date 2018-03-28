@@ -5,6 +5,11 @@ const axios = require('axios');
 const request = require('request');
 const workouts = require('./Data_Store/workoutDB')
 require('dotenv').config();
+//To have site available on a domain (free) download heroku here:
+//	https://devcenter.heroku.com/articles/heroku-cli
+// then 
+
+
 
 //Development mode:
 //Step 1:
