@@ -17,10 +17,9 @@ export default class App extends Component {
   }
 
   componentDidMount() {
-    axios.get('http://localhost:8000/key') // -> Development Mode
-    //axios.get('key')                       // -> Production Mode
+    //axios.get('http://localhost:8000/key') // -> Development Mode
+    axios.get('key')                       // -> Production Mode
       .then((res) => {
-        console.log(res)
         this.setState({
           key: res.data
         }, () => {
@@ -36,11 +35,8 @@ export default class App extends Component {
     selectObjects[currentPart] = true;
     this.human.send("scene.selectObjects", selectObjects);
 
-   this.human.on('scene.picked', function (info) {
-      console.log(info.objectId);
-    });
-    const localhost = "http://localhost:8000/currentPart/" + name   // -> Development mode
-    // const localhost = "/currentPart/" + name   // -> Production mode
+    //const localhost = "http://localhost:8000/currentPart/" + name   // -> Development mode
+    const localhost = "/currentPart/" + name   // -> Production mode
     axios.get(localhost)
       .then(res => {
         this.setState({
@@ -49,9 +45,6 @@ export default class App extends Component {
         })
       })
   }
-
-
-
 
   render() {
     return (

@@ -33,7 +33,7 @@ app.use((req, res, next) => {
 
 //Step 2:
 //Comment this line out (in for production)
-// app.use(express.static(__dirname + './../build'))
+app.use(express.static(__dirname + './../build'))
 
 app.listen(process.env.PORT || 8000, () => {
 	console.log('Server Started on ' + process.env.PORT );
@@ -59,12 +59,18 @@ app.get('/key', (req, res) => {
 })
 
 //Step 3:
-//Comment this request out (in for production mode)
-// app.get('*', (req, res) => {
-// 	res.sendFile('index.html',{root: __dirname + './../build'})
-// 	});
+//Comment this request out (in for production mode). Must always be the last line in server file
+app.get('*', (req, res) => {
+	res.sendFile('index.html',{root: __dirname + './../build'})
+	});
 	
 
 //Step 4:
 // Go into App.js and change server requests  (see commented lines above axios.get requests)
 
+//Step 5:
+//Enter the following commands in terminal
+//	git add .
+//	git commit -m " "
+//	git push heroku master
+//	heroku open
