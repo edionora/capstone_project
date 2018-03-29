@@ -40,7 +40,6 @@ app.listen(process.env.PORT || 8000, () => {
 	console.log('Press CTRL + C to stop server');
 });
 app.use(bodyParser.json())
-let workoutDb = []
 
 app.get('/currentPart/:part', (req, res) => {
 	console.log(req.params.part + " was clicked")
@@ -52,8 +51,6 @@ app.get('/currentPart/:part', (req, res) => {
 	}
 })
 
-
-
 app.get('/key', (req, res) => {
 	res.send(process.env.Dev_Key)
 })
@@ -64,7 +61,6 @@ app.get('*', (req, res) => {
 	res.sendFile('index.html',{root: __dirname + './../build'})
 	});
 	
-
 //Step 4:
 // Go into App.js and change server requests  (see commented lines above axios.get requests)
 
