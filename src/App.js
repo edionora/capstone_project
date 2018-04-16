@@ -50,7 +50,7 @@ export default class App extends Component {
     return (
       <div className="App">
         <header className="App-header">
-          <h1 className="headerFont"> Welcome to workout buddy! :::) </h1>
+          <h1 className="headerFont"> Welcome to workout buddy! ::)) </h1>
           <div className="App-logo" >&#x2665;</div>
           <div>
           </div>
