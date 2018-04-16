@@ -16,8 +16,10 @@ require('dotenv').config();
 //	a)Navigate into pacakge.json folder and remove this (add if production mode) from line 5:
 //	  "proxy": "http//localhost:8000", 
 
-//	b) replace 		"start": "nodemon backend/server.js"
-//	   with  		"start": "react-scripts start"
+//	b) on line 18
+//		replace		"start": "nodemon backend/server.js"
+//		with  		"start": "react-scripts start"
+
 
 /*** if production mode: ***/
 //	b) replace 		"start": "react-scripts start"
