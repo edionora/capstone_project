@@ -77,7 +77,7 @@ a, button {
 .enableScroll{
   padding-top: 1em;
   overflow-y: scroll;
-  height: 80vh; 
+  height: 70vh; 
   background-image: url("https://i.imgur.com/VKTPd2M.jpg");
   background-repeat: no-repeat;
   background-size: cover;
